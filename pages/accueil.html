@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/css/main.min.css">
+    <title>Accueil - Quai Antique</title>
+</head>
+<body class="accueil-body">
+        <header>
+            <nav>
+                <div class="accueil-navBar" id="navBar">
+                    <h1><a href="./accueil.html">Quai Antique</a></h1>
+                    <div class="accueil-navBar-links">
+                        <div class="accueil-navBar-links1">
+                            <ul>
+                                <li><a href="./accueil.html">Acceuil</a></li>
+                                <li><a href="./pagesUsers/galerie.html">Galerie</a></li>
+                                <li><a href="./pagesUsers/nosMenus.html">Nos menus</a></li>
+                                <li><a href="./pagesUsers/réservation.html">Les réservations</a></li>
+                            </ul>
+                        </div>
+                        <div class="accueil-navBar-links2">
+                            <ul>
+                                <li><a href="#">Mon compte</a></li>
+                                <li><a href="./pagesUsers/connexion.html">Inscription / Connexion</a></li>
+                            </ul>
+                        </div>
+                        <svg id="burgerBtn" width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.048"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#ffffff" stroke-width="2.04" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#ffffff" stroke-width="2.04" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#ffffff" stroke-width="2.04" stroke-linecap="round"></path> </g></svg>
+                    </div>
+                </div>
+            </nav>
+            <nav>
+                <div class="accueil-navBarMobile-links" id="accueil-navBarMobile-links">
+                    <ul>
+                        <li><a href="./accueil.html">Acceuil</a></li>
+                        <li><a href="./pagesUsers/galerie.html">Galerie</a></li>
+                        <li><a href="./pagesUsers/nosMenus.html">Nos menus</a></li>
+                        <li><a href="./pagesUsers/réservation.html">Les réservations</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Mon compte</a></li>
+                        <li><a href="./pagesUsers/connexion.html">Inscription / Connexion</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="accueil-hero">
+                    <p>Le chef Arnaud Michand vous invite au</p>
+                    <h1>Quai Antique</h1>
+                    <button onclick="window.location.href='./pagesUsers/réservation.html'">Réserver</button>
+                </div>
+            </section>
+            <div class="accueil-sections">
+                <section>
+                    <h2>Bienvenue au Quai Antique</h2>
+                    <div class="accueil-containerSection1">
+                        <p>Bienvenue sur le site de notre restaurant gastronomique situé au coeur magnifique de la ville de Chambéry. Le chef Arnaud Michand vous invite a découvrir un voyage culinaire mémorable</p>
+                        <img src="../assets/img/chefCuisine.jpg" alt="Le chef Arnaud Michand en train de cuisiner">
+                    </div>
+                    <button onclick="window.location.href='./pagesUsers/nosMenus.html'">Nos Menus</button>
+                </section>
+                <section class="accueil-sectionBackgroundDark">
+                    <h2>Bienvenue au Quai Antique</h2>
+                    <div class="accueil-containerSection2">
+                        <img src="../assets/img/avocat.jpg" alt="un avocat coupé en deux">
+                        <p>Bienvenue sur le site de notre restaurant gastronomique situé au coeur magnifique de la ville de Chambéry. Le chef Arnaud Michand vous invite a découvrir un voyage culinaire mémorable</p>
+                    </div>
+                    <button onclick="window.location.href='./pagesUsers/galerie.html'">Voir la galerie</button>
+                </section>
+                <section>
+                    <h2>Bienvenue au Quai Antique</h2>
+                    <div class="accueil-containerSection3">
+                        <p>Bienvenue sur le site de notre restaurant gastronomique situé au coeur magnifique de la ville de Chambéry. Le chef Arnaud Michand vous invite a découvrir un voyage culinaire mémorable</p>
+                        <img src="../assets/img/salleDuRestaurant.jpg" alt="La salle du restaurant">
+                    </div>
+                    <button onclick="window.location.href='./pagesUsers/réservation.html'">Réserver</button>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="acceuil-footer">
+                <div class="accueil-footer1">
+                    <h3>Nos horaires</h3>
+                    <p>Du mardi au dimanche 12:00-14:00 18:00-23:00</p>
+                </div>
+                <div class="accueil-footer2">
+                    <p>Quai antique</p>
+                    <p>5 rue de la République</p>
+                    <p>31115</p>
+                    <p>06 01 01 01 01</p>
+                </div>
+                <div class="accueil-footer3">
+                    <h3>Nous suivre</h3>
+                    <p><a href="mailto:'Contact@quaiantique.com'">Contact@quaiantique.com</a></p>
+                </div>
+            </div>
+        </footer>
+
+    <script src="../scripts/pagesUsers/AccueilNavBar.js"></script>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
