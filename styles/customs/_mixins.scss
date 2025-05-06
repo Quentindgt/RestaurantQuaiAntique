@@ -1,0 +1,219 @@
+@import './variables';
+
+@mixin button($p-x, $p-y) {
+            background-color: $primary;
+            color: white;
+            border: none;
+            padding: $p-x $p-y;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+            &:active {
+                background-color: darken($primary, $amount: 5);
+                transform: scale(1);
+            }
+
+            @media screen and (max-width:950px) {
+                &:hover {
+                    transform: none;
+                }
+                &:active {
+                    transform: scale(1.1);
+                }
+            }
+}
+
+@mixin navBar() {
+    .navBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $dark;
+        height: 50px;
+        padding: 0 1rem;
+
+        h1 {
+            height: 100%;
+            
+            a {
+                height: 100%;
+                padding: 0 1rem;
+                display: flex;
+                align-items: center;
+                color: white;
+                text-decoration: none;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 1.5rem;
+                
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
+
+        .navBar-links {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+
+            .navBar-links1, .navBar-links2{
+                height: 100%;
+
+                ul {
+                height: 100%;
+                display: flex;
+                list-style: none;
+
+                    li {
+                        height: 100%;
+
+                        a {
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            padding: 0 0.5rem;
+                            color: white;
+                            text-decoration: none;
+                            border-radius: 0 0 5px 5px;
+                            transition: all 0.2s ease-in-out;
+
+                            &:hover {
+                                background-color: $secondary;
+                                transform: scale(1.05);
+                                margin: 0 1rem;
+                            }
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 950px) {
+                    display: none;
+                }
+            } 
+
+            svg {
+                height: 100%;
+                border-radius: 40%;
+                display: none;
+                cursor: pointer;
+                
+                @media screen and (max-width: 950px) {
+                    display: block;
+
+                    &:active {
+                        transform: scale(0.95);
+                    }
+                }
+            }
+        }
+    }
+    .navBarMobile-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        background-color: $dark;
+
+        display: none; //display block en java
+
+        ul {
+            list-style: none;
+            width: 100%;
+
+            li {
+                height: 100%;
+                
+                a {
+                    height: 100%;
+                    padding: 1rem;
+                    text-decoration: none;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &:active{
+                        background-color: lighten($dark, $amount: 10);
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
+
+@mixin hero() {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../../assets/img/plats.jpg);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 2rem;
+
+        h1 {
+            margin-bottom: 2rem;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        button {
+            @include button(0.5rem, 1rem);
+        }
+    }
+}
+
+@mixin footer() {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        background-color: $dark;
+        color: white;
+        padding: 4rem 0;
+
+        @media screen and (max-width: 950px) {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .footer1, .footer3 {
+
+            h3 {
+                color: $primary;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 300;
+                font-style: normal;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
