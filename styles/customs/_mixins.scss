@@ -163,9 +163,9 @@
         background-position: center;
         color: white;
         padding: 2rem;
+        height: 175px;
 
         h1 {
-            margin-bottom: 2rem;
             font-family: "Montserrat", sans-serif;
             font-weight: 300;
             font-style: normal;
@@ -173,6 +173,7 @@
 
         button {
             @include button(0.2rem, 2rem);
+            margin-top: 2rem;
         }
     }
 }
