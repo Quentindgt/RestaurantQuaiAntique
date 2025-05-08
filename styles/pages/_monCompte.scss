@@ -1,0 +1,53 @@
+.monCompte-body {
+    @include navBar;
+
+    @include hero;
+
+    .monCompte-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem 6rem;
+        width: 50%;
+        margin: auto;
+
+        h2 {
+            color: $primary;
+            font-size: 1.5rem;
+            width: 100%;
+            text-align: center;
+        }
+
+        .monCompte-section1 {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        .monCompte-section2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+            width: 100%;
+
+            button {
+                @include button(0.5rem, 2rem);
+            }
+
+            .delete {
+                background-color: rgb(167, 0, 0);
+            }
+        }
+    }
+
+    @include footer;
+}
