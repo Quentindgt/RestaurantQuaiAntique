@@ -1,0 +1,71 @@
+.nosMenus-body {
+
+    @include navBar;
+
+    @include hero;
+
+    .nosMenus-sectionAdmin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding-top: 2rem;
+        width: 100%;
+
+        @media screen and (max-width: 950px) {
+            width: 90%;
+            margin: auto;
+        }
+
+        button {
+            @include button(0.5rem, 2rem);
+            width: 200px;
+        }
+    }
+
+    .nosMenus-sectionMenu {
+
+            .nosMenus-containerMenu {
+            display: flex;
+            align-items: center;
+            flex-direction:row-reverse;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+            width: 880px;
+            margin: auto;
+
+            @media screen and (max-width: 950px) {
+                flex-direction: column-reverse;
+                width: 80%;
+            }
+
+            .nosMenus-menu1, .nosMenus-menu2 {
+                background-color: white;
+                width: 50%;
+                padding: 2rem;
+                border-radius: 20px;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                transition: all 0.2s ease-in-out;
+
+                @media screen and (max-width: 950px) {
+                    width: 100%;
+                }
+
+
+                h2, h3 {
+                    text-align: center;
+                    padding: 1rem;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+    
+
+    @include footer;
+    
+}
