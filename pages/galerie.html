@@ -58,7 +58,7 @@
             </div>
         </section>
         <section class="galerie-section">
-            <button>Ajouter une photo</button>
+            <button class="galerie-btnAjouter">Ajouter une photo</button>
             <div class="galerie-containerPhoto">
                 <div class="galerie-photo">
                     <p class="galerie-overlayIconMod"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.1497 7.93997L8.27971 19.81C7.21971 20.88 4.04971 21.3699 3.27971 20.6599C2.50971 19.9499 3.06969 16.78 4.12969 15.71L15.9997 3.84C16.5478 3.31801 17.2783 3.03097 18.0351 3.04019C18.7919 3.04942 19.5151 3.35418 20.0503 3.88938C20.5855 4.42457 20.8903 5.14781 20.8995 5.90463C20.9088 6.66146 20.6217 7.39189 20.0997 7.93997H20.1497Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M21 21H12" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></p>
@@ -101,6 +101,55 @@
         </section>
     </main>
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modification / Ajout d'une image</h2>
+    </div>
+    <div class="modal-body">
+      <form action="">
+        <div>
+            <label for="titre">Titre : </label>
+            <input type="text" id="titre" name="titre">
+        </div>
+        <div>
+            <label for="file">Ajouter une image : </label>
+            <input type="file" id="file" name="file">
+        </div>
+        <input class="connexion-modal-inputSubmit" type="submit" value="Ajouter">
+      </form>
+    </div>
+  </div>
+
+</div>
+<div id="myModalDelete" class="modal-delete">
+  <div class="modal-content">
+    <div class="modal-header">
+        <span class="closeDelete">&times;</span>
+        <h2>Suppression d'une image</h2>
+    </div>
+    <div class="modal-body">
+      <form action="">
+        <div class="modale-form">
+            <label for="titre">Etes-vous sur de vouloir supprimer cette image ?</label>
+            <div>
+                <input type="radio" id="titre" name="titre">
+                <label for="titre">Oui</label>
+            </div>
+            <div>
+                <input type="radio" id="titre" name="titre">
+                <label for="titre">Non</label>
+            </div>
+        </div>
+        <input class="connexion-modal-inputSubmit" type="submit" value="Valider">
+      </form>
+    </div>
+  </div>
+
+</div>
+
     <footer>
         <div class="footer">
             <div class="footer1">
@@ -121,6 +170,7 @@
     </footer>
 
     <script src="../scripts/navBar.js"></script>
+    <script src="../scripts/galerieModal.js"></script>
     <script src="../scripts/main.js"></script>
 </body>
 </html>
