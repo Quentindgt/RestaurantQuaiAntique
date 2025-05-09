@@ -67,10 +67,9 @@
     }
     
     .modalModif {
-        display: none;
+        display: flex;
         position: fixed;
         z-index: 1;
-        padding-top: 100px;
         left: 0;
         top: 0;
         width: 100%;
@@ -135,13 +134,29 @@
                     align-items: center;
                     justify-content: center;
                     gap: 2rem;
+                    text-align: center;
+
+                    .container-menu {
+                        display: flex;
+                        gap: 10rem;
+
+                        @media screen and (max-width: 950px) {
+                            flex-direction: column;
+                            gap: 2rem;
+                        }
+                    }
 
                     .formulaire-menuDuMidi, .formulaire-menuDuSoir {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        gap: 1rem;
-                        width: 100%;
+                        gap: 2rem;
+                        width: 100px;
+
+                        background-color: lighten($secondary, $amount: 25); //$secondary;
+                        padding: 2rem;
+                        border-radius: 5px;
+                        
                     }
                 
                         .modalModif-inputSubmit {
