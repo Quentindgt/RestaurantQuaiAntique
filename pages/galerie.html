@@ -100,59 +100,10 @@
             <button onclick="window.location.href='./réservation.html'">Réserver</button>
         </section>
     </main>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Modification / Ajout d'une image</h2>
-    </div>
-    <div class="modal-body">
-      <form action="">
-        <div>
-            <label for="titre">Titre : </label>
-            <input type="text" id="titre" name="titre">
-        </div>
-        <div>
-            <label for="file">Ajouter une image : </label>
-            <input type="file" id="file" name="file">
-        </div>
-        <input class="connexion-modal-inputSubmit" type="submit" value="Ajouter">
-      </form>
-    </div>
-  </div>
-
-</div>
-<div id="myModalDelete" class="modal-delete">
-  <div class="modal-content">
-    <div class="modal-header">
-        <span class="closeDelete">&times;</span>
-        <h2>Suppression d'une image</h2>
-    </div>
-    <div class="modal-body">
-      <form action="">
-        <div class="modale-form">
-            <label for="titre">Etes-vous sur de vouloir supprimer cette image ?</label>
-            <div>
-                <input type="radio" id="titre" name="titre">
-                <label for="titre">Oui</label>
-            </div>
-            <div>
-                <input type="radio" id="titre" name="titre">
-                <label for="titre">Non</label>
-            </div>
-        </div>
-        <input class="connexion-modal-inputSubmit" type="submit" value="Valider">
-      </form>
-    </div>
-  </div>
-
-</div>
-
+    
     <footer>
-        <div class="footer">
-            <div class="footer1">
+    <div class="footer">
+        <div class="footer1">
                 <h3>Nos horaires</h3>
                 <p>Du mardi au dimanche 12:00-14:00 18:00-23:00</p>
             </div>
@@ -169,8 +120,65 @@
         </div>
     </footer>
 
+<div id="galerie-modalAdd" class="modalAdd">
+  <div class="modalAdd-body">
+    <div class="modalAdd-header">
+      <span class="modalAdd-close">&times;</span>
+      <h2>Ajout d'une image</h2>
+    </div>
+    <div class="modalAdd-main">
+      <form action="">
+        <div class="modalAdd-titreImg">
+            <label for="titre">Titre : </label>
+            <input type="text" id="titre" name="titre">
+        </div>
+        <div class="modalAdd-addImg">
+            <label for="file">Ajouter une image : </label>
+            <input type="file" id="file" name="file">
+        </div>
+        <input class="modalAdd-inputSubmit" type="submit" value="Valider">
+      </form>
+    </div>
+  </div>
+</div>
+<div id="galerie-modalModif" class="modalModif">
+  <div class="modalModif-body">
+    <div class="modalModif-header">
+      <span class="modalModif-close">&times;</span>
+      <h2>Remplacer mon image</h2>
+    </div>
+    <div class="modalModif-main">
+      <form action="">
+        <div class="modalModif-titreImg">
+            <label for="titre">Titre : </label>
+            <input type="text" id="titre" name="titre">
+        </div>
+        <div class="modalModif-addImg">
+            <label for="file">Choisissez une image : </label>
+            <input type="file" id="file" name="file">
+        </div>
+        <input class="modalModif-inputSubmit" type="submit" value="Valider">
+      </form>
+    </div>
+  </div>
+</div>
+<div id="galerie-modalDelete" class="modalDelete">
+  <div class="modalDelete-body">
+    <div class="modalDelete-header">
+      <span class="modalDelete-close">&times;</span>
+      <h2>Supprimer mon image</h2>
+    </div>
+    <div class="modalDelete-main">
+      <form action="">
+        <label for="modalDelete-inputDelete">Voulez-vous vraiment supprimer cette image ?</label>
+        <input class="modalDelete-inputDelete" id="modalDelete-inputDelete" type="submit" value="Supprimer">
+      </form>
+    </div>
+  </div>
+</div>
+
     <script src="../scripts/navBar.js"></script>
-    <script src="../scripts/galerieModal.js"></script>
+    <script src="../scripts/galerieModals.js"></script>
     <script src="../scripts/main.js"></script>
 </body>
 </html>
