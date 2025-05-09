@@ -92,7 +92,56 @@
             </div>
         </footer>
 
+<div id="monCompte-modalModif" class="modalModif">
+    <div class="modalModif-body">
+        <div class="modalModif-header">
+          <span class="modalModif-close">&times;</span>
+          <h2>Modifier mes Informations</h2>
+        </div>
+        <div class="modalModif-main">
+         <form class="formulaire" action="">
+            <div class="modalModif-name">
+                 <label for="nom">Nom : </label>
+                 <input type="text" id="nom" name="nom">
+            </div>
+            <div class="modalModif-firstName">
+               <label for="prenom">Prénom : </label>
+              <input type="text" name="prenom" id="prenom">
+            </div>
+            <div class="modalModif-email">
+               <label for="email">Email : </label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="modalModif-allergies">
+                 <label for="allergies">Avez-vous des allergies ?</label>
+                  <input type="text" name="allergies" id="allergies">
+            </div>
+            <div class="modalModif-convivesNbr">
+                 <label for="convives">Nombre de convives habituel :</label>
+                  <input type="text" name="convives" id="convives">
+            </div>
+          <input class="modalModif-inputSubmit" type="submit" value="Valider">
+         </form>
+        </div>
+    </div>
+</div>
+<div id="monCompte-modalDelete" class="modalDelete">
+    <div class="modalDelete-body">
+      <div class="modalDelete-header">
+        <span class="modalDelete-close">&times;</span>
+        <h2>Supprimer mon compte</h2>
+      </div>
+      <div class="modalDelete-main">
+        <form action="">
+          <label for="modalDelete-inputDelete">Voulez-vous vraiment supprimer votre compte</label>
+          <input class="modalDelete-inputDelete" id="modalDelete-inputDelete" type="submit" value="Supprimer">
+        </form>
+      </div>
+    </div>
+</div>
+
     <script src="../scripts/navBar.js"></script>
+    <script src="../scripts/monCompteModals.js"></script>
     <script src="../scripts/main.js"></script>
 </body>
 </html>
