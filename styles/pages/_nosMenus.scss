@@ -77,6 +77,7 @@
         overflow: auto;
         background-color: rgb(0,0,0);
         background-color: rgba(0,0,0,0.4);
+        padding: auto;
         
         @-webkit-keyframes animatetop {
             from {top:-300px; opacity:0} 
@@ -138,6 +139,8 @@
 
                     .container-menu {
                         display: flex;
+                        align-items: center;
+                        justify-content: center;
                         gap: 10rem;
 
                         @media screen and (max-width: 950px) {
