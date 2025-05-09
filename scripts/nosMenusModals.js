@@ -3,7 +3,7 @@ const btnOpenModalAdd = document.getElementsByClassName("nosMenus-btnModifier")[
 const closeModalAdd = document.getElementsByClassName("modalModif-close")[0];
 
 btnOpenModalAdd.addEventListener("click", () => {
-  modalAdd.style.display = "block";
+  modalAdd.style.display = "flex";
 })
 
 closeModalAdd.addEventListener("click", () => {
