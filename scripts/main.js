@@ -29,11 +29,18 @@ function eraseCookie(name) {
 
 const tokenCookieName = "accesstoken";
 const signoutBtn = document.getElementById("deconnexion");
+const signoutBtnMobile = document.getElementById("deconnexionMobile");
 
 signoutBtn.addEventListener("click", function() {
     eraseCookie(tokenCookieName);
     window.location.reload();
 });
+
+signoutBtnMobile.addEventListener("click", function() {
+    eraseCookie(tokenCookieName);
+    window.location.reload();
+}
+);
 
 function setToken(token){
     setCookie(tokenCookieName, token, 7);
