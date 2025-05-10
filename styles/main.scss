@@ -29,3 +29,29 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-size: 1.5rem;
 }
+
+.isValid {
+  background-color: #cbefcc45;
+  border: 1px solid #4caf50;
+  box-shadow: 0 0 5px #4caf50;
+
+  ::after {
+    content: "✔";
+    color: #4caf50;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}
+.isInvalid {
+  background-color: #eba49f48;
+  border: 1px solid #f4433648;
+  box-shadow: 0 0 5px #f4433648;
+}
+
+input:focus {
+  outline: none;
+}
