@@ -16,9 +16,10 @@ submitButton.addEventListener("click", function (event) {
     }
 
     if ((emailInput.value == "quentin_dugat@hotmail.com") && (passwordInput.value == "Quejeateselo.0192")) {
-        window.location.replace("accueil.html");
         const token = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
         setToken(token);
+        setCookie(roleCookieName, "client", 7);
+        window.location.replace("accueil.html");
     } else {
         alert("Email or password is incorrect.");
         emailError.style.display = "block";
